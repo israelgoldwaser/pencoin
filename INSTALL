@@ -1,0 +1,9 @@
+Building PenCoin
+
+See doc/readme-qt.rst for instructions on building PenCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of PenCoin.
+
+See doc/build-*.txt for instructions on building PenCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of PenCoin.
