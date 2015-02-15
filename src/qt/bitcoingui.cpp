@@ -282,7 +282,7 @@ void BitcoinGUI::createActions()
     receiptAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
     tabGroup->addAction(receiptAction);
 
-    sendMessagesAnonAction = new QAction(QIcon(":/icons/em"), tr("S&end Messages"), this);
+    sendMessagesAnonAction = new QAction(QIcon(":/icons/em"), tr("S&end Messages Anonymously"), this);
     sendMessagesAnonAction->setToolTip(tr("Send Anonymous Message"));
     sendMessagesAnonAction->setCheckable(true);
     sendMessagesAnonAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_9));
@@ -421,6 +421,12 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+    toolbar->addSeparator();
+
+
+    toolbar->addAction(sendMessagesAction);
+    toolbar->addAction(sendMessagesAnonAction);
+    toolbar->addAction(messageAction);
 
     toolbar->addSeparator();
     toolbar->addAction(exportAction);
